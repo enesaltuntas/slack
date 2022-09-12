@@ -3,11 +3,16 @@ import path from "path"
 import MiniCssExtractPlugin from "mini-css-extract-plugin"
 import HtmlWebpackPlugin from "html-webpack-plugin"
 import CopyPlugin from "copy-webpack-plugin"
+import webpack from "webpack"
 
 export default {
   // Define the entry points of our application (can be multiple for different sections of a website)
   entry: {
     main: "./src/js/main.js",
+  },
+
+  externals: {
+    jquery: 'jQuery'
   },
 
   // Define the destination directory and filenames of compiled resources
@@ -74,6 +79,12 @@ export default {
     // Load .env file for environment variables in JS
     new Dotenv({
       path: "./.env"
+    }),
+
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery'
     }),
 
     // Extracts CSS into separate files

@@ -24,10 +24,27 @@
 //---------------------------------------------
 
 body {
+  background-image: url("../images/welcome_bg.png");
+  background-position: right -440px top -130px;
+  background-repeat: no-repeat;
+  background-size: 1089px 1262px;
+  overflow-x: hidden;
 }
 
 //---------------------------------------------
 // 3.Components
 //---------------------------------------------
 
-@import "components/slider";
+@import "components/header";
+@import "components/welcome";
+@import "components/clients";
+@import "components/services";
+@import "components/pricing";
+@import "components/features";
+@import "components/testimonial";
+@import "components/free_start";
+@import "components/blog";
+@import "components/footer";
+
+
+@import "responsive";

@@ -1,0 +1,46 @@
+//---------------------------------------------
+//
+//  Free Start Component
+//
+//    1. Imports
+//    2. Component
+//
+//---------------------------------------------
+
+//---------------------------------------------
+// 1. Imports
+//---------------------------------------------
+
+@import "../variables";
+
+//---------------------------------------------
+// 2. Component
+//---------------------------------------------
+
+#free_start {
+  padding: 144px 0;
+  background-color: #f4f7ff;
+
+  @media (min-width: 996px) {
+    background-image: url("../../images/mockup.png");
+    background-position: left -595px top -44px;
+    background-repeat: no-repeat;
+    background-size: 1612px 906px;
+  }
+
+  h3 {
+    color: #253164;
+    font-size: 34px;
+    font-weight: 900;
+    margin-bottom: 4px;
+  }
+
+  p {
+    color: #8791c3;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 40px;
+  }
+
+  @include register_form;
+}

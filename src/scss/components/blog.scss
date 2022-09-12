@@ -1,0 +1,47 @@
+//---------------------------------------------
+//
+//  Blog Component
+//
+//    1. Imports
+//    2. Component
+//
+//---------------------------------------------
+
+//---------------------------------------------
+// 1. Imports
+//---------------------------------------------
+
+@import "../variables";
+
+//---------------------------------------------
+// 2. Component
+//---------------------------------------------
+
+#blog {
+  padding: 60px 0 160px 0;
+
+  @include light_title;
+
+  .blog_box {
+
+    .blog_img {
+      margin-bottom: 24px;
+      box-shadow: 0 25px 30px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+
+    h6 {
+      color: #253164;
+      font-size: 24px;
+      font-weight: 900;
+      margin-bottom: 13px;
+    }
+
+    a {
+      color: #4886fb;
+      font-size: 18px;
+      font-weight: 500;
+      text-decoration: unset;
+    }
+  }
+}

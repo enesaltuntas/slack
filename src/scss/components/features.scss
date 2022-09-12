@@ -1,0 +1,52 @@
+//---------------------------------------------
+//
+//  Features Component
+//
+//    1. Imports
+//    2. Component
+//
+//---------------------------------------------
+
+//---------------------------------------------
+// 1. Imports
+//---------------------------------------------
+
+@import "../variables";
+
+//---------------------------------------------
+// 2. Component
+//---------------------------------------------
+
+#features {
+  padding: 60px 0;
+  background-color: #253164;
+
+  @include dark_title;
+
+  .features_box {
+    text-align: center;
+
+    .icon_box {
+      width: 126px;
+      height: 126px;
+      box-shadow: 0 25px 30px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      background-color: #ffffff;
+      display:flex;
+      justify-content:center;
+      align-items: center;
+      margin: auto auto 25px auto;
+    }
+
+    h5 {
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: 900;
+    }
+    p {
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+}

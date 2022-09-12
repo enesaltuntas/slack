@@ -1,6 +1,6 @@
 //---------------------------------------------
 //
-//  Header Component
+//  Clients Component
 //
 //    1. Imports
 //    2. Component
@@ -17,4 +17,19 @@
 // 2. Component
 //---------------------------------------------
 
-// Nothing here yet
+#clients {
+  margin-top: 85px;
+
+  .item {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+
+    img {
+      vertical-align: middle;
+      width: auto;
+      margin: auto;
+      display: inline-block;
+    }
+  }
+}

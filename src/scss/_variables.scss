@@ -13,7 +13,7 @@
 // 1. Bootstrap Fonts
 //---------------------------------------------
 
-$font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-base: 'Montserrat', sans-serif;
 
 //---------------------------------------------
 // 2. Bootstrap Globals
@@ -29,7 +29,7 @@ $enable-gradients: false;
 
 $body-color: #000000; // The default text color
 
-$primary:    #0d6efd;
+$primary:    #064094;
 $secondary:  #6c757d;
 $success:    #198754;
 $info:       #0dcaf0;
@@ -49,3 +49,76 @@ $container-max-widths: (
   xl: 1140px,
   xxl: 1320px
 );
+
+//---------------------------------------------
+// 4. Overwrited Veriables
+//---------------------------------------------
+
+$navbar-light-active-color: #2e426d;
+$navbar-padding-y: 25px;
+
+//---------------------------------------------
+// 4. Mixins
+//---------------------------------------------
+@mixin register_form {
+  .welcome_register {
+    input {
+      max-width: 276px;
+      margin-bottom: 21px;
+      height: 51px;
+      border-radius: 4px;
+      border: 1px solid #bdc1dd;
+    }
+    button {
+      padding: 15px 25px;
+      position: relative;
+
+      &:after {
+        content: "";
+        width: 23px;
+        height: 27px;
+        -webkit-clip-path: polygon(100% 50%, 0 0, 0 100%);
+        clip-path: polygon(100% 50%, 0 0, 0 100%);
+        background-color: #064094;
+        position: absolute;
+        right: -41px;
+      }
+    }
+  }
+}
+@mixin light_title {
+  .section_heading {
+    text-align: center;
+
+    h2 {
+      color: #253164;
+      font-size: 34px;
+      font-weight: 900;
+    }
+
+    p {
+      color: #8791c3;
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 45px;
+    }
+  }
+}
+@mixin dark_title {
+  .section_heading {
+    text-align: center;
+
+    h2 {
+      color: #FFFFFF;
+      font-size: 34px;
+      font-weight: 900;
+    }
+
+    p {
+      color: #FFFFFF;
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 45px;
+    }
+  }
+}

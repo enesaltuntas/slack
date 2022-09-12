@@ -1,0 +1,81 @@
+//---------------------------------------------
+//
+//  Testimonial Component
+//
+//    1. Imports
+//    2. Component
+//
+//---------------------------------------------
+
+//---------------------------------------------
+// 1. Imports
+//---------------------------------------------
+
+@import "../variables";
+
+//---------------------------------------------
+// 2. Component
+//---------------------------------------------
+
+#testimonial {
+  padding: 60px 0;
+
+  @include light_title;
+
+  #testimonial_slider {
+    margin-top: 160px;
+
+    .item {
+      max-width: 450px;
+
+      p.desc {
+        color: #7c87a2;
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 20px;
+      }
+
+      p.name {
+        color: #253164;
+        font-size: 24px;
+        font-weight: 900;
+        margin-bottom: 4px;
+      }
+
+      p.title {
+        color: #4886fb;
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 30px;
+      }
+    }
+
+    .owl-nav, .owl-dots {display: inline-block;}
+
+    .owl-next {
+      position: relative;
+
+      img {
+        position: absolute;
+        left: 75px;
+        top: -13px;
+      }
+    }
+
+    button.owl-dot {
+      height: 6px;
+      width: 6px;
+      border-radius: 50%;
+      background-color: #064094 !important;
+      margin: 0 5px;
+      opacity: 0.2;
+
+      &.active {
+        opacity: 1;
+        width: 10px;
+        height: 10px;
+      }
+    }
+
+  }
+}

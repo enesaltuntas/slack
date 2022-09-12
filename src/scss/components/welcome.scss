@@ -1,0 +1,85 @@
+//---------------------------------------------
+//
+//  Welcome Component
+//
+//    1. Imports
+//    2. Component
+//
+//---------------------------------------------
+
+//---------------------------------------------
+// 1. Imports
+//---------------------------------------------
+
+@import "../variables";
+
+//---------------------------------------------
+// 2. Component
+//---------------------------------------------
+
+#welcome {
+
+  .welcome_desc {
+    margin-top: 160px;
+
+    h1 {
+      color: #1f5bfb;
+      font-size: 53px;
+      font-weight: 900;
+      margin-bottom: 23px;
+
+      span {
+        color: #152c5b;
+      }
+    }
+    p {
+      color: #7c87a2;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 23px;
+    }
+  }
+
+  @include register_form;
+
+  .statistics {
+    margin-top: 87px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    .total_projects {
+      width: 265px;
+      height: 103px;
+      box-shadow: 0 25px 30px rgba(0, 0, 0, 0.05);
+      border-radius: 10px;
+      background-color: #ffffff;
+      padding: 18px 32px;
+      position: absolute;
+      left: 100px;
+      top: 85px;
+
+      .w-50:first-of-type span {color: #4985fc;}
+      .w-50:last-of-type  span {color: #1aaf73;}
+
+      p {
+        margin-bottom: 0;
+        color: #263265;
+        font-size: 17px;
+        font-weight: 500;
+
+        span {
+          font-size: 28px;
+          font-weight: 900;
+        }
+
+      }
+    }
+  }
+
+  @media (max-width: 996px) {
+    .scroll {
+      margin-top: 50px;
+    }
+  }
+}

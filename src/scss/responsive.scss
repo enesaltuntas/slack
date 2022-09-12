@@ -1,0 +1,65 @@
+//---------------------------------------------
+//
+//  Responsive Css
+//
+//    1. Imports
+//    2. Component
+//
+//---------------------------------------------
+
+//---------------------------------------------
+// 1. Imports
+//---------------------------------------------
+
+@import "variables";
+
+//---------------------------------------------
+// 2. Responsive Css
+//---------------------------------------------
+
+@media (max-width: 991px) {
+
+  #welcome {
+    .welcome_desc {
+      margin-top: 30px;
+    }
+  }
+
+  #services {
+    .service_box {
+      margin-bottom: 30px;
+    }
+  }
+
+  #free_start {
+    padding: 60px 0;
+  }
+
+  #testimonial {
+    #testimonial_slider {
+      margin-top: 30px;
+    }
+  }
+
+  #blog {
+    .blog_box {margin-bottom: 30px;}
+  }
+
+  footer {
+    ul.footer_menu {
+      margin: 30px 0 !important;
+    }
+  }
+
+}
+
+@media (max-width: 768px) {
+  footer {
+    ul.footer_menu {
+      li {
+        margin: 0;
+        display: block;
+      }
+    }
+  }
+}
