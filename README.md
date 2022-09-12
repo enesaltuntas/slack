@@ -1,4 +1,4 @@
-# Slack Redesign Template
+# Slack Redesign Website Template
 
 ## Run project
 
