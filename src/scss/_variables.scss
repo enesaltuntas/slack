@@ -60,6 +60,12 @@ $navbar-padding-y: 25px;
 //---------------------------------------------
 // 4. Mixins
 //---------------------------------------------
+@mixin placeholder {
+  color: #152c5b;
+  font-size: 18px;
+  font-weight: 800;
+}
+
 @mixin register_form {
   .welcome_register {
     input {
@@ -68,10 +74,36 @@ $navbar-padding-y: 25px;
       height: 51px;
       border-radius: 4px;
       border: 1px solid #bdc1dd;
+      @include placeholder;
+
+      &::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+        @include placeholder;
+      }
+      &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        @include placeholder;
+        opacity:  1;
+      }
+      &::-moz-placeholder { /* Mozilla Firefox 19+ */
+        @include placeholder;
+        opacity:  1;
+      }
+      &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+        @include placeholder;
+      }
+      &::-ms-input-placeholder { /* Microsoft Edge */
+        @include placeholder;
+      }
+      &::placeholder { /* Most modern browsers support this now. */
+        @include placeholder;
+      }
     }
+
     button {
       padding: 15px 25px;
       position: relative;
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: 800;
 
       &:after {
         content: "";
